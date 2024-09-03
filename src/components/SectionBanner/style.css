@@ -1,0 +1,59 @@
+.section-banner {
+  height: 100vh;
+  display: flex;
+}
+
+.section-banner div:nth-child(1) {
+  width: 50%;
+  background-image: url('../../../public/assets/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.imagemDeFundo_modo_claro {
+  background-color: #fff;
+}
+
+.imagemDeFundo_modo_escuro {
+  background-color: #252525;
+}
+
+.banner-title {
+  width: 50%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafbfc;
+}
+
+.banner-title p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #022144;
+}
+
+.banner-title h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #022144;
+}
+
+.banner-title span {
+  font-weight: 900;
+  font-size: 50px;
+  color: #022144;
+}
+
+@media (max-width: 768px) {
+  .secao_banner div:nth-child(1) {
+    display: none;
+  }
+
+  .banner-title {
+    width: 100%;
+  }
+}
